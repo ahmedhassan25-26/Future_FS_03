@@ -143,7 +143,7 @@ Follow these steps to run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone <repository-link>
+git clone <https://github.com/ahmedhassan25-26/Future_FS_02.git >
 ```
 
 ### 2. Open the project folder
