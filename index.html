@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barwaaqo Health Clinic | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i> Barwaaqo <span>Health Clinic</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="blog.html">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch" id="langToggle">
+                    <span class="lang-btn" data-lang="so">🇸🇴 Soomaali</span>
+                    <span class="lang-btn lang-active" data-lang="en">🇬🇧 English</span>
+                </div>
+                <button id="darkModeBtn" class="dark-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 id="heroTitle">Your Health, Our Priority</h1>
+                    <p id="heroSub">Caafimaadkaaga, Mudnaantayada — trusted care for Somali families with bilingual support.</p>
+                    <div class="hero-btns">
+                        <a href="appointment.html" class="btn-primary">📅 Book Appointment</a>
+                        <a href="tel:+252615550120" class="btn-outline">🚨 Emergency Contact</a>
+                        <a href="doctors.html" class="btn-outline">👨‍⚕️ Meet Our Doctors</a>
+                    </div>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p id="stat1">Years of experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>30+</h3>
+                            <p id="stat2">Certified doctors</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>98%</h3>
+                            <p id="stat3">Patient satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                <img src="assets/hero-image.jpg"
+                     alt="Barwaaqo Health Clinic"
+                     style="width: 100%; height: auto; border-radius: 48px; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="quick-grid">
+                <div class="quick-card" onclick="window.location.href='appointment.html'">
+                    <i class="fas fa-calendar-check fa-2x"></i>
+                    <h4 id="qa1">Book Appointment</h4>
+                </div>
+                <div class="quick-card" onclick="window.location.href='services.html#telehealth'">
+                    <i class="fas fa-video fa-2x"></i>
+                    <h4 id="qa2">Online Consultation</h4>
+                </div>
+                <div class="quick-card" onclick="window.location.href='doctors.html'">
+                    <i class="fas fa-user-md fa-2x"></i>
+                    <h4 id="qa3">Find a Doctor</h4>
+                </div>
+                <div class="quick-card" onclick="window.location.href='blog.html'">
+                    <i class="fas fa-leaf fa-2x"></i>
+                    <h4 id="qa4">Health Tips</h4>
+                </div>
+                <div class="quick-card" onclick="window.location.href='contact.html'">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                    <h4 id="qa5">Contact Clinic</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services -->
+    <section class="featured-services">
+        <div class="container">
+            <h2 class="section-title" id="servicesTitle">🌟 Our Core Services</h2>
+            <div class="services-grid" id="servicesGrid"></div>
+            <div class="text-center">
+                <a href="services.html" class="btn-outline">View All Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Preview -->
+    <section class="featured-doctors">
+        <div class="container">
+            <h2 class="section-title" id="doctorsTitle">👩‍⚕️ Our Specialist Doctors</h2>
+            <div class="doctors-grid" id="doctorsGrid"></div>
+            <div class="text-center">
+                <a href="doctors.html" class="btn-outline">View All Doctors →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title" id="testimonialTitle">💬 What Our Patients Say</h2>
+            <div class="testimonials-grid" id="testimonialsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Wellness Tips Preview -->
+    <section class="wellness-preview">
+        <div class="container">
+            <h2 class="section-title" id="wellnessTitle">🧘 Wellness & Health Tips</h2>
+            <div class="blog-grid" id="blogGrid"></div>
+            <div class="text-center">
+                <a href="blog.html" class="btn-outline">Read More Articles →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="ctaTitle">Ready to Prioritize Your Health?</h2>
+                <p id="ctaText">Book an appointment today and experience compassionate care in your language.</p>
+                <a href="appointment.html" class="btn-primary">Book Now →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-leaf"></i> Barwaaqo Health</h4>
+                    <p>Somali-first wellness & clinic committed to community health.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="blog.html">Health Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Health Dictionary</h4>
+                    <ul class="dictionary">
+                        <li><strong>Diabetes</strong> → Sonkorow</li>
+                        <li><strong>Blood Pressure</strong> → Dhiig-karka</li>
+                        <li><strong>Vaccine</strong> → Tallaal</li>
+                        <li><strong>Pregnancy</strong> → Uur</li>
+                        <li><strong>Nutrition</strong> → Nafaqo</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Working Hours</h4>
+                    <p>Sun - Thu: 8:00 AM - 8:00 PM</p>
+                    <p>Friday: 2:00 PM - 6:00 PM</p>
+                    <p>Saturday: Closed</p>
+                    <p><i class="fas fa-phone"></i> +252 61 555 0120</p>
+                    <p><i class="fab fa-whatsapp"></i> +252 61 777 8899</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Barwaaqo Health Clinic — Caafimaad iyo Kalsoonid</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/252617778899" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

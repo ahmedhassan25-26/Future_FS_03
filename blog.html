@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog | Barwaaqo Health Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Barwaaqo <span>Health Clinic</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="blog.html" class="active">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch" id="langToggle">
+                    <span class="lang-btn" data-lang="so">🇸🇴 Soomaali</span>
+                    <span class="lang-btn lang-active" data-lang="en">🇬🇧 English</span>
+                </div>
+                <button id="darkModeBtn" class="dark-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 id="pageTitle">Health Education Blog</h1>
+                <p id="pageSubtitle">Bilingual health tips and wellness education for our community</p>
+            </div>
+        </section>
+
+        <section class="featured-blog">
+            <div class="container">
+                <div class="featured-article" id="featuredArticle"></div>
+            </div>
+        </section>
+
+        <section class="all-blogs">
+            <div class="container">
+                <h2 class="section-title" id="allPostsTitle">📚 All Articles</h2>
+                <div class="blog-full-grid" id="allBlogsGrid"></div>
+            </div>
+        </section>
+
+        <section class="blog-categories">
+            <div class="container">
+                <h3 id="categoriesTitle">Browse by Topic</h3>
+                <div class="category-tags">
+                    <span class="tag">Diabetes Awareness</span>
+                    <span class="tag">Maternal Health</span>
+                    <span class="tag">Nutrition Tips</span>
+                    <span class="tag">Mental Wellness</span>
+                    <span class="tag">Child Vaccination</span>
+                    <span class="tag">Ramadan Health</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-box">
+                    <h3 id="newsTitle">📧 Subscribe to Health Tips</h3>
+                    <p id="newsText">Get weekly health tips in Somali & English delivered to your inbox.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4><i class="fas fa-leaf"></i> Barwaaqo Health</h4><p>Somali-first wellness & clinic</p></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone"></i> +252 61 555 0120</p><p><i class="fab fa-whatsapp"></i> +252 61 777 8899</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Barwaaqo Health Clinic</p></div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

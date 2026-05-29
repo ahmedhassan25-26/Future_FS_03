@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | Barwaaqo Health Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><i class="fas fa-leaf"></i> Barwaaqo <span>Health Clinic</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="appointment.html" class="active">Appointment</a>
+                <a href="blog.html">Health Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <div class="lang-switch" id="langToggle">
+                    <span class="lang-btn" data-lang="so">🇸🇴 Soomaali</span>
+                    <span class="lang-btn lang-active" data-lang="en">🇬🇧 English</span>
+                </div>
+                <button id="darkModeBtn" class="dark-toggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 id="pageTitle">Book an Appointment</h1>
+                <p id="pageSubtitle">Schedule your visit with our specialists in just a few clicks</p>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-form-container">
+                        <form id="appointmentForm" class="appointment-form">
+                            <div class="form-group">
+                                <label id="nameLabel">Full Name *</label>
+                                <input type="text" id="patName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label id="emailLabel">Email Address</label>
+                                <input type="email" id="patEmail" placeholder="example@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label id="phoneLabel">Phone Number *</label>
+                                <input type="tel" id="patPhone" placeholder="+252 XX XXX XXXX" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label id="doctorLabel">Select Doctor *</label>
+                                    <select id="doctorSelect" required></select>
+                                </div>
+                                <div class="form-group">
+                                    <label id="serviceLabel">Select Service *</label>
+                                    <select id="serviceSelect" required></select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label id="dateLabel">Preferred Date *</label>
+                                    <input type="date" id="apptDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label id="timeLabel">Preferred Time *</label>
+                                    <select id="apptTime" required>
+                                        <option value="">Select time</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label id="notesLabel">Additional Notes</label>
+                                <textarea id="patNotes" rows="3" placeholder="Any symptoms or special requests..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary btn-full" id="submitBtn">Submit Appointment Request</button>
+                            <p id="formMsg" class="form-message"></p>
+                        </form>
+                    </div>
+                    <div class="booking-info">
+                        <div class="info-card">
+                            <h3 id="infoTitle">📋 What to Expect</h3>
+                            <ul>
+                                <li id="info1">✓ Confirmation within 2 hours via WhatsApp/SMS</li>
+                                <li id="info2">✓ Free consultation for first-time patients</li>
+                                <li id="info3">✓ Somali & English speaking staff available</li>
+                                <li id="info4">✓ Telehealth options available</li>
+                            </ul>
+                            <hr>
+                            <p><strong id="emergencyNote">For emergencies:</strong> <a href="tel:+252615550120">+252 61 555 0120</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4><i class="fas fa-leaf"></i> Barwaaqo Health</h4><p>Somali-first wellness & clinic</p></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="doctors.html">Doctors</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><p><i class="fas fa-phone"></i> +252 61 555 0120</p><p><i class="fab fa-whatsapp"></i> +252 61 777 8899</p></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Barwaaqo Health Clinic</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/252617778899" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
